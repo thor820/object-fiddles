@@ -4,7 +4,11 @@
 //Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. Then alert your name using dot notation.
 
   //Code here
-
+var me = {
+  name: 'Thor',
+  age: '32',
+}
+alert(me.name);
 
 
 
@@ -18,7 +22,14 @@
 //Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
 
   //Code here
-
+var favoriteThings = {
+  band: 'Foo Fighters',
+  food: 'Pizza',
+  person: 'Stacy',
+  book: 'The Dark Tower',
+  movie: 'Pulp Fiction',
+  holiday: 'Christmas'
+}
 
 
 
@@ -28,7 +39,8 @@
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
   //Code here
-
+favoriteThings.car = ('Corolla');
+favoriteThings.brand = ('Apple');
 
 
 
@@ -37,28 +49,31 @@
 
   //Code here
 
-
-
+favoriteThings.food = ('Chicken Nuggets');
+favoriteThings.book = ('Harry Potter');
 
 
 //NEXT PROBLEM
 
 
 
-/* 
+/*
 Create an empty Object called backPack. Now, create a variable called 'item'
 and set it equal to the string 'firstPocket'. Using bracket notation,
 add a 'firstPocket' key (or property) to backPack, using 'item'.
 Set the value of that key to 'chapstick'.
 
 Using dot notation, add another key (or property) to your backPack object
-that is named color, with the value being the color of your backpack. 
+that is named color, with the value being the color of your backpack.
 */
 
   //Code here
 
-
-
+var backPack = {
+}
+var item = 'firstPocket';
+backPack[item] = 'chapstick';
+backPack.color = 'blue';
 
 
 
@@ -66,17 +81,17 @@ that is named color, with the value being the color of your backpack.
 
   //Code here
 
- 
+alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
-Instead, console.log your whole backPack object and then check out the console. 
+Instead, console.log your whole backPack object and then check out the console.
 */
 
   //Code here
 
-
+console.log(backPack);
 
 
 
@@ -97,6 +112,8 @@ var user2 = {
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
   //Code Here
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
@@ -126,7 +143,7 @@ var user2 = {
 /*
 Now add two methods (functions that are properties on objects) to your methodCollection
 object. One called 'alertHello' which alerts 'hello' and another method called logHello
- which logs 'hello' to the console. 
+ which logs 'hello' to the console.
  */
 
   //Code Here
@@ -159,7 +176,7 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
 
 
-  
+
 
 
 //NEXT PROBLEM
@@ -169,5 +186,3 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
 
   //Code Here
-
-
